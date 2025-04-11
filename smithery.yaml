@@ -1,0 +1,10 @@
+startCommand:
+  type: stdio
+  configSchema:
+    type: object
+    properties: {}
+    description: No configuration is required to run the code-runner MCP server.
+  commandFunction:
+    |-
+    (config) => ({ command: 'node', args: ['./dist/index.js'] })
+  exampleConfig: {}
